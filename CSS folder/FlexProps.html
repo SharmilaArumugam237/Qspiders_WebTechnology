@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 500px;
+            width: 650px;
+            border: 2px solid black;
+            display: flex;
+
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row-reverse;
+            flex-direction: row;
+
+            
+            flex-wrap: nowrap;
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+
+            flex-flow: column wrap;
+            flex-flow: column nowrap;
+            flex-flow: column wrap-reverse;
+            flex-flow: row nowrap;
+
+            justify-content: flex-start;
+            justify-content: center;
+            justify-content: flex-end;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly;
+
+            align-items: flex-start;
+            align-items: center;
+            align-items: flex-end;
+            align-items: center;
+            align-items: flex-start;
+
+            justify-content: flex-start;
+
+        }
+        .cls{
+            height: 70px;
+            width: 130px;
+            border: 2px solid black;
+        }
+        #child1{
+            background-color: red;
+            order: 3;
+            flex-grow: 120;
+            flex-shrink: 60;
+            align-self: flex-start;
+
+        }
+        #child2{
+            background-color: blue;
+            order: 4;
+            flex-grow: 60;
+             flex-shrink: 120;
+             align-self: flex-end;
+        }
+        #child3{
+            background-color: green;
+            order: 2;
+            flex-grow: 80;
+             flex-shrink: 200;
+             align-self: center;
+        }
+        #child4{
+            background-color: yellow;
+            order: 1;
+            flex-grow: 200;
+             flex-shrink: 80;
+             align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child1" class="cls">Child 1</div>
+        <div id="child2" class="cls">Child 2</div>
+        <div id="child3" class="cls">Child 3</div>
+        <div id="child4" class="cls">Child 4</div>
+         <div id="child1" class="cls">Child 1</div>
+        <div id="child2" class="cls">Child 2</div>
+         <div id="child3" class="cls">Child 3</div> 
+        <div id="child4" class="cls">Child 4</div>
+        <div id="child1" class="cls">Child 1</div>
+         <div id="child2" class="cls">Child 2</div> 
+        <div id="child3" class="cls">Child 3</div>
+        <div id="child4" class="cls">Child 4</div> 
+    </div>
+</body>
+</html>

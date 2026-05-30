@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgb(17, 12, 17);
+        }
+        #parent{
+            margin-left: 150px;
+            margin-top: 100px;
+            height: 700px;
+            width: 1000px;
+            
+            display: flex;
+        }
+        .cls{
+            height: 400px;
+            width: 500px;
+          
+        }
+        #child1{
+            padding-left: 60px;
+            padding-top: 50px;
+            height:350px ;
+             background-color: rgb(48, 24, 48); 
+             color: #fff;
+             font-family: "Roboto", sans-serif;
+             
+        }
+        #child2{
+            background-image: url(office.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgb(48, 24, 48); 
+            opacity: 0.3;
+            
+        }
+        h1{
+           letter-spacing: 2px;
+           font-weight: 700;
+        }
+        p{
+            color: rgb(236, 235, 233);
+            opacity: 0.7;
+        }
+        #flex{
+            margin-right: 80px;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            text-align: center;
+        }
+        .box1{
+            letter-spacing: normal;
+        }
+        span{
+            color: rgb(185, 13, 185);
+        }
+        .para{
+            font-size: small;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div id="parent">
+        <div id="child1" class="cls">
+            <h1>Get <span>insights</span> that help <br>
+            your business grow.</h1>
+
+            <p>Discover the benefits of data analytics and make <br> better decisions regarding revenue, customer <br> experience and overall efficiency</p>
+<div id="flex">
+            <div class="box">
+                <h1 class="box1">10K+</h1>
+                <p class="para">COMPANIES</p>
+            </div>
+            <div class="box">
+                <h1 class="box1">314</h1>
+                <p class="para">TEMPLATES</p>
+            </div>
+            <div class="box">
+                <h1 class="box1">12M+</h1>
+                <p class="para">QUERIES</p>
+            </div>
+            </div>
+        </div>
+        <div id="child2" class="cls"></div>
+    </div>
+   
+</body>
+</html>

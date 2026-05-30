@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class </title>
+    <style>
+        a:link{
+            color: green;
+        }
+        a:active{
+            color: black;
+        }
+        a:visited{
+            color: deeppink;
+        }
+        input:focus{
+            height: 30px;
+            width: 200px;
+            color: white;
+            background-color: blue;
+        }
+        [type="checkbox"]:checked{
+            accent-color: yellow;
+
+        }
+        [type="radio"]:checked{
+            accent-color: yellowgreen;
+        }
+        p:hover{
+            color: white;
+            background-color: black;
+            text-decoration: underline;
+        }
+        
+        /* structural pseudoclass */
+        div>h1:first-child{
+            color: white;
+            background-color: blue;
+        }
+        div>p:last-child{
+            color: white;
+            background-color: blue;
+        }
+        #parent>h1:nth-child(3){
+            color: white;
+            background-color:red;
+        }
+        #parent>h1:nth-child(odd){
+            color: blue;
+            background-color: yellow;
+            text-align: center;
+        }
+        #parent>h1:nth-child(even){
+            color: yellow;
+            background-color: blue;
+            text-align: center;
+        }
+        #demo>:nth-child(3){
+            color: white;
+            background-color: purple;
+        }
+        #demo>:nth-child(odd){
+            color: white;
+            background-color: hotpink;
+            text-align: center;
+            text-decoration: none;
+        }
+        #demo>:nth-child(even){
+            color: white;
+            background-color: greenyellow;
+            text-align: center;
+        }
+        #raja1>p:first-of-type{
+            color: red;
+            background-color: aqua;
+            text-decoration: none;
+        }
+         #raja2>p:first-of-type{
+            color: red;
+            background-color: aqua;
+            text-decoration: none;
+        }
+        #raja1>h1:last-of-type{
+            color: brown;
+            background-color: rgb(4, 49, 34);
+        }
+         #raja2>h1:last-of-type{
+            color: brown;
+            background-color: rgb(4, 49, 34);
+        }
+
+    </style>
+</head>
+<body>
+    <!-- DYNAMIC CLASS SELECTOR -->
+    <!-- LINK, ACTIVE AND VISITED -->
+     <a href="https://open.spotify.com">Spotify</a>
+     <hr>
+     <!-- FOCUS -->
+      <input type="text">
+
+      <hr>
+      <!-- CHECKED -->
+       <input type="checkbox">
+       <input type="radio">
+       <hr>
+       <!-- HOVER -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae facilis quis eos minima! Quaerat sapiente ea quod quia. Porro laborum necessitatibus ad illo totam dicta accusamus, velit illum ipsa qui inventore quisquam delectus vero dolores ex minus facere autem animi blanditiis repudiandae. Ipsum, rerum voluptate? Adipisci quo repellat dolor quasi eveniet soluta rem ratione nihil obcaecati quia quas voluptatibus laborum minus inventore, vitae minima a? Dolorum exercitationem laboriosam quasi tempora pariatur tempore facere. Totam a deserunt cum! Excepturi tenetur eveniet vitae vel autem quod rerum nobis error corporis? Vitae soluta non accusantium explicabo consectetur voluptas nulla cum optio sapiente perferendis praesentium nam laborum rem aperiam placeat magni quaerat, numquam dolorum ratione doloribus quod officia sint. Quia quidem esse dolorum quaerat eaque doloremque fugiat amet dolore, ducimus voluptatem, placeat, asperiores accusamus labore corporis expedita veritatis id quas iure perferendis. Eaque laborum pariatur neque dolores aspernatur at sit similique omnis iste aperiam.</p>
+        <hr>
+
+        <!-- STURCTURAL PSEUDO CLASS SELECTOR -->
+         <!-- FIRST CHILD AND LAST CHILD -->
+          <div>
+            <h1>Karthi</h1>
+            <p>Niranjan</p>
+            <h2>Kiruba</h2>
+            <p>Sai</p>
+            <h1>Ram</h1>
+          </div>
+          <hr>
+          <div>
+            <p>Lakshmi</p>
+            <h1>Nithya</h1>
+            <h2>Keerthana</h2>
+            <h1>Shalini</h1>
+            <p>Sandhiya</p>
+          </div>
+          <hr>
+          <!-- Nth CHILD -->
+           <div id="parent">
+            <h1>MS dhoni</h1>
+            <h1>Sanju Samsung</h1>
+            <h1>Chirst Gayle</h1>
+            <h1>Bravo</h1>
+            <h1>Malinga</h1>
+            <h1>Jadeja</h1>
+           </div>
+           <hr>
+           <div id="demo">
+                <h2>Tharun</h2>
+                <h1>Hari</h1>
+                <p>Kiruba</p>
+                <h2>Kailash</h2>
+                <p>Surya</p>
+                <he>Bala</he>
+            </div>
+            <hr>
+           <!-- FIRST-OF-TYPE AND LAST-OF-TYPE -->
+            <div id="raja1">
+                <h2>Karthik</h2>
+                <h1>Vicky</h1>
+                <p>Surya</p>
+                <h3>Hevins</h3>
+                <h1>Chotu</h1>
+            </div>
+            <hr>
+            <div id="raja2">
+                <p>Lakshmi</p>
+                <h1>Pooja</h1>
+                <h3>Priya</h3>
+                <p>Vinaya</p>
+                <h2>Sowmiya</h2>
+            </div>
+            
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 500px;
+            width: 650px;
+            border: 2px solid black;
+            display: grid;
+            /* grid-template-rows: 80px 80px;
+            grid-template-columns: 80px 80px; */
+            grid-template: 80px 80px / 80px 80px;
+            /* grid-row-gap: 80px;
+            grid-column-gap: 100px; */
+            grid-gap: 30px;
+
+            /* justify-content: start;
+            justify-content: center;
+            justify-content: end; */
+
+            align-content: center;
+            align-content: end;
+            align-content: start;
+
+            justify-items: start;
+            justify-items: center;
+            justify-items: end;
+        }
+        #demo1{
+            background-color: red;
+        }
+        #demo2{
+            background-color: yellow;
+        }
+        #demo3{
+            background-color: green;
+        }
+        #demo4{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="demo1">child1</div>
+        <div id="demo2">child2</div>
+        <div id="demo3">child3</div>
+        <div id="demo4">child4</div>
+    </div>
+</body>
+</html>

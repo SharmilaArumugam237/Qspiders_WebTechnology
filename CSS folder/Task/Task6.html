@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #outer{
+            margin-left: 100px;
+            margin-top: 10px;
+            height: 650px;
+            width: 1180px;
+           
+            display: flex;
+            justify-content: space-between;
+        }
+        #parent1{
+            height: 600px;
+            width: 800px;
+            border: 2px solid;
+            border-radius: 25px;
+        }
+        
+        #child1{
+            height: 80px;
+            width: 800px;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 900;
+            
+        }
+        #child1_content1{
+
+            height: 30px;
+            width: 140px;
+            border: 2px solid black;
+            border-radius: 25px;
+            padding-left: 10px;
+            padding-top: 6px;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        #child1_content2{
+            margin-right: 350px;
+            margin-top: 30px;
+        }
+        #child1_content3{
+            height: 30px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 25px;
+             padding-left: 10px;
+            padding-top: 6px;
+            margin-right: 10px;
+             margin-top: 20px;
+        }
+        #child2{
+            height: 420px;
+            width: 800px;
+            border: 1px solid black;
+            
+        }
+        #child2_content{
+            height: 300px;
+            width: 760px;
+            border: 2px solid black;
+            border-radius: 15px;
+            margin: 15px;
+            text-align: center;
+            background-color: rgb(245, 145, 178);
+            
+        }
+        h5{
+            height: 20px;
+            width: 120px;
+         
+            box-shadow: 2px 1px 6px black;
+            text-align: center;
+            margin-left: 300px;
+            padding-top: 2px;
+            border-radius: 15px;
+            background-color: #fff;
+        }
+        h1{
+            padding-top: 30px;
+            color: rgb(32, 32, 32);
+        }
+        h6{
+            font-size: medium;
+        }
+        #child2_content2{
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 10px;
+        }
+        
+        .child2_para{
+            height: 30px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 25px;
+            margin-bottom: 33px;
+            text-align: center;
+            padding-top: 7px;
+        }
+        #child2_content_para1{
+            background-color: yellow;
+        }
+        #range{
+            display: flex;
+            justify-content: center;
+        }
+        input{
+            background-color: #fff;
+            width: 80px;
+        }
+        #child3{
+            margin-top: 10px;
+            height: 80px;
+            width: 800px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-weight: 900;
+           
+          
+            
+        }
+        #child3_content1{
+            padding-top: 10px;
+            text-align: center;
+            padding-left: 5px;
+            height: 30px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 25px;
+        }
+        #child3_content3{
+            padding-top: 10px;
+            text-align: center;
+            padding-left: 5px;
+            height: 30px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 25px;
+        }
+        #child3_content2 {
+            margin-top: 15px;
+        }
+        
+        #parent2{
+            height: 600px;
+            width: 350px;
+            border: 2px solid black;
+            border-radius: 25px;
+            margin-left: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+        #parent2_head{
+            padding-left: 30px;
+        }
+        .p2box{
+            height: 100px;
+            width: 280px;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding-left: 30px;
+            margin-left: 20px;
+             margin-bottom: 25px;
+            
+
+        }
+        #parent2_box1{
+            background: linear-gradient(to left, yellow 40%,white 20%);
+        }
+         #parent2_box2{
+            background: linear-gradient(to left, rgb(44, 189, 199) 40%,white 20%);
+        }
+         #parent2_box3{
+            background: linear-gradient(to left, rgb(194, 16, 185) 40%,white 20%);
+        }
+         #parent2_box4{
+            background: linear-gradient(to left, rgb(54, 172, 39) 40%,white 20%);
+        }
+        span{
+            font-size: x-large;
+            font-weight: 900;
+            display: block;
+            margin-bottom: 15px;
+        }
+        #parent2 p{
+           
+            font-size: larger;
+            font-weight: 500;
+
+        }
+        #parent2 i{
+            position: absolute;
+            left: 1200px;
+           
+           
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="parent1">
+            <div id="child1" class="cls">
+                <p id="child1_content1">All Categories &nbsp;<i class="fa-solid fa-angle-down"></i></p>
+                <p id="child1_content2"><i class="fa-regular fa-square"></i> &nbsp;Hide Mastered</p>
+                <p id="child1_content3"><i class="fa-solid fa-shuffle"></i>&nbsp;Shuffle</p>
+
+            </div>
+            <div id="child2" class="cls">
+                <div id="child2_content">
+                       <h5>Web Development</h5>
+                       <h1>What does HTML stand for?</h1>
+                       <h6>Click to reveal answer</h6>
+                       <div id="range"><input type="range"><h6>10%</h6></div>
+                       
+                </div>
+                <div id="child2_content2" >
+                    <p id="child2_content_para1" class="child2_para"><i class="fa-regular fa-circle-check"></i>&nbsp;I Know This</p>
+                    <p id="child2_content_para2" class="child2_para"><i class="fa-solid fa-rotate-left"></i>&nbsp;Reset Progress</p>
+                    
+                </div>
+                
+                
+
+            </div>
+            <div id="child3" class="cls">
+                <p id="child3_content1"><i class="fa-solid fa-angle-left"></i>Previous</p>
+                <p id="child3_content2">Card 1 of 40</p>
+                <p id="child3_content3">Next<i class="fa-solid fa-angle-right"></i></p>
+
+            </div>
+
+        </div>
+        <div id="parent2">
+
+            <h3 id="parent2_head">Study Statistics</h3>
+            <div id="parent2_box1" class="p2box">
+                
+                
+                <p>Total Cards</p>
+                <i class="fa-solid fa-layer-group"></i><span>40</span>
+                
+            </div>
+            <div id="parent2_box2" class="p2box">
+                <p>Mastered</p>
+                <i class="fa-solid fa-trophy"></i><span>11</span>
+                
+                
+                
+            </div>
+            <div id="parent2_box3" class="p2box">
+               <p>In Progress</p>
+               <i class="fa-solid fa-file"></i><span>21</span>
+               
+               
+            </div>
+            <div id="parent2_box4" class="p2box">
+                <p>Not Started</p>
+                <i class="fa-solid fa-inbox"></i><span>8</span>
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

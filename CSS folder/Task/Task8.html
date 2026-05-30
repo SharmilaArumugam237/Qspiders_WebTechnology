@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(180, 180, 121);
+        }
+        #main{
+            margin-left: 400px;
+            margin-top: 150px;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: rgb(30, 91, 95);
+        }
+        #eye1{
+            height: 30px;
+            width: 20px;
+            background-color: #fff;
+            position: relative;
+            top:65px ;
+            left: 50px;
+            display: inline-block;
+            border-radius: 30px;
+        }
+         #eye2{
+            height: 30px;
+            width: 20px;
+            background-color: #fff;
+            border-radius: 30px;
+            position: relative;
+            top:30px ;
+            left: 135px;
+        }
+        .eyeball{
+            height: 18px;
+            width: 12px;
+            background-color: rgb(17, 17, 17);
+            border-radius: 15px;
+            position: relative;
+            top: 15px;
+            left: 4px;
+            animation-duration: 2s;
+            animation-name: eye;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes eye{
+            from{
+                 height: 18px;
+            width: 12px;
+            background-color: rgb(8, 8, 8);
+            border-radius: 15px;
+            position: relative;
+            top: 11px;
+            left: 4px;
+
+            }
+            to{ 
+                height: 12px;
+            width: 12px;
+        }
+        }
+        #mouth{
+           
+            height: 13px;
+            width: 60px;
+            background-color: red;
+            position: relative;
+            top: 80px;
+            left: 70px;
+            animation-duration: 2s;
+            animation-name: mouth;
+            animation-iteration-count: infinite;
+        }
+        @keyframes mouth{
+            from{
+            height: 13px;
+            width: 60px;
+            background-color: red;
+            position: relative;
+            top: 80px;
+            left: 70px;
+        }
+        to{
+             height: 10px;
+            border-radius: 15px;
+        }
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="eye1">
+            <div class="eyeball">
+
+            </div>
+        </div>
+        <div id="eye2">
+            <div class="eyeball">
+
+            </div>
+        </div>
+
+        <div id="mouth"></div>
+       
+    </div>
+</body>
+</html>

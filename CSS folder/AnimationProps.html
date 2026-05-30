@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* #demo{
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: red;
+        animation-duration: 4s;
+        animation-delay: 1s;
+        animation-name: sharu;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-play-state: running;
+       }
+        #demo:hover{
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        background-color: red;
+        animation-duration: 4s;
+        animation-delay: 1s;
+        animation-name: sharu;
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
+       }
+    @keyframes sharu{
+        from{
+            height: 120px;
+            width: 120px;
+            border:10px solid black;
+            border-radius:10px;
+            background-color: red;
+        }
+        to{
+            height: 70px;
+            width: 70px;
+            border:10px double white;
+            background-color: black;
+            border-radius: 50%;
+            transform: translateX(400px);
+            
+
+        }
+    } */
+
+     #demo{
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        background-color: red;
+        animation-duration: 1s;
+        animation-name: sharu;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+     }
+     #demo:hover{
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        background-color: red;
+        animation-duration: 1s;
+        animation-name: sharu;
+        animation-iteration-count: infinite;
+        animation-play-state: paused;
+     }
+
+
+     @keyframes sharu{
+        20%{
+            height: 150px;
+            width: 150px;
+            border: 8px double red;
+            background-color: green;
+            border-radius: 15%;
+            transform: translateX(200px);
+        }
+        40%{
+            height: 100px;
+            width: 100px;
+            border: 8px dotted green;
+            background-color: yellow;
+            border-radius: 25%;
+            transform: translate(200px,300px);
+        }
+        60%{
+            height: 70px;
+            width: 70px;
+            border: 8px dashed yellow;
+            background-color: blue;
+            border-radius: 45%;
+            transform: translateY(300px);
+        }
+
+     }
+</style>
+<body>
+    <div id="demo"></div>
+</body>
+</html>

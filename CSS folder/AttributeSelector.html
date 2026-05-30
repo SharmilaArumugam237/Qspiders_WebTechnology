@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    [id]{
+        color: white;
+        background-color: purple;
+    }
+    [title="para"]{
+        color: white;
+        background-color: blue;
+    }
+    [title~="demo"]{
+        color: white;
+        background-color: red;
+    }
+    [title|="demo1"]{
+        color: white;
+        background-color: orange;
+    }
+    [title^="demo2"]{
+        color: white;
+        background-color: greenyellow;
+    }
+    [title$="demo3"]{
+        color: white;
+        background-color: palevioletred;
+    }
+     [title*="demo4"]{
+        color: white;
+        background-color: brown;
+    }
+</style>
+<body>
+    <!-- ATTRIBUTE NAME  -->
+     <p id="para">Bala</p>
+     <p title="dmo">Vicky</p>
+     <p class="demo">Niranjan</p>
+     <p id="demo">Kiruba</p>
+     <p title="paraa">Kailash</p>
+     <hr>
+     <!-- ATTRIBUT="VALUE" -->
+     <p title="para">Bala</p>
+     <p title="para ">Vicky</p>
+     <p title=" para">Niru</p>
+     <p title=" para ">Kiruba</p>
+     <p title="paraaa">Kailash</p>
+     <hr>
+     <!-- ATTRIBUT~="VALUE" -->
+     <p title="demo">Bala</p>
+     <p title="demo ">Vicky</p>
+     <p title=" demo">Niru</p>
+     <p title=" demo ">Kiruba</p>
+     <p title="demooo">Kailash</p>
+     <hr>
+     <!-- ATTRIBUTE|="VALUE" -->
+      <p title="demo1">Bala</p>
+      <p title="demo1-">Vicky</p>
+      <p title="-demo1">Niru</p>
+      <p title="demo1-demo1">Kiruba</p>
+      <p title="demo1-para">Kailash</p>
+      <hr>
+      <!-- ATTRIBUTE^="VALUE" -->
+      <p title="demo2">Bala</p>
+      <p title=" demo2-">Vicky</p>
+      <p title="-demo2">Niru</p>
+      <p title="demo2-demo2">Kiruba</p>
+      <p title="demo2-para">Kailash</p>
+      <hr>
+      <!-- ATTRIBUTE$="VALUE" -->
+      <p title="demo3">Bala</p>
+      <p title=" demo3-">Vicky</p>
+      <p title="-demo3">Niru</p>
+      <p title="demo3-demo3">Kiruba</p>
+      <p title="demo3 ">Kailash</p>
+      <hr>
+      <!-- ATTRIBUTE*="VALUE" -->
+      <p title="demo4">Bala</p>
+      <p title=" demo4-">Vicky</p>
+      <p class="-demo4">Niru</p>
+      <p title="demo4-para">Kiruba</p>
+      <p title="parademo4para">Kailash</p>
+</body>
+</html>
