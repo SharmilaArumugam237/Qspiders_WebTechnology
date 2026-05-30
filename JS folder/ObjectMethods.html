@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //OBJECT METHOD
+
+        let person ={
+            Name:"Sharmila",
+            Age:"21",
+            City:"Chennai",
+            Country:"India"
+
+        }
+        console.log(person)
+        //KEYS
+
+        console.log(Object.keys(person))
+
+        //VALUES....
+        console.log(Object.values(person))
+
+        //ENTRIES.. IT IS USED TO RETURN ALL THE KEYS AS WELL AS VALUES FROM THE ENTIRE OBJECT IN THE FORM OF ARRAY
+        console.log(Object.entries(person))
+
+        //SEAL.. IT IS USED TO UPDATE THE EXISTING VALUES THAT ARE PRESENT BEFORE SEALING THE OBJECT BUT WE CANNOT
+        //MODIFY 
+
+        person.Chocolate="Dairy Milk"
+        console.log(person)
+
+        person.Food="Biriyani"
+        console.log(person)
+
+       // console.log(Object.seal(person))
+        person.Sweet="Laddu"
+        console.log(person)
+
+        person.Name="Aarthi"
+        console.log(person)//UPDATE
+
+        //ISSEALED...IT IS USED TO CHECK WHETHER THE OBJECT IS SEALED OR NOT.. IF IT IS SEALED IT WILL RETURN TRUE 
+        //OR ELSE FALSE
+        console.log(Object.isSealed(person))
+
+        //FREEZE....WHEN THE OBJECT IS FREEZED WE CANNOT UPDATE THE EXISTING VALUES INSIDE THE OBJECT AS WELL
+        //AS WE CANNOT MODIFY OR WEE CANNOT EVEN ADD THE NEW VALUES INSIDE THE OBJECT..
+        console.log(person)
+
+        person.Icecream="Black Current"
+        console.log(person)
+
+        console.log(Object.freeze(person))
+        person.Sports="Cricket"
+        console.log(person)
+
+        //ISFROZEN..IT IS ALSO USED TO CHECK WHETHER THE OBJECT IS FREEZED OR NOT ..IF THE OBJECT IS FREEZED
+        //IT WILL RETURN TRUE OR ELSE IT WILL RETURN FALSE
+
+        console.log(Object.isFrozen(person))
+
+    </script>
+</body>
+</html>

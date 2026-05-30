@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //NAMED FUNCTION
+
+       /* function add(a,b){
+            return a+b
+        }
+        function sub(a,b){
+            return a-b
+        }
+        function mul(a,b){
+            return a*b
+        }
+
+        console.log(add(10,20))
+
+        //or
+
+        let x1=add(20,20)
+        console.log(x1)
+   
+
+        //or
+
+        let x2=sub(40,20)
+        console.log(x2)
+
+
+        //or
+
+        let x3=(20,20)
+        console.log(x3)
+
+        //FUNCTION EXPRESSION
+
+        let a=function chintu(){
+            console.log("I am chintu")
+        }
+        a()
+
+        let b=function mintu(){
+           
+            console.log("I am Mintu")
+        }
+        b()
+
+        //ANONYMOUS FUNCTION
+        let fun = function(){
+            console.log("I am Anonymous ......")
+        }
+        fun()
+
+        //NESTED FUNCTION
+        function parent(){
+            console.log("I am Parent")
+            function child(){
+                console.log("I am Child")
+            }
+            child()
+        }
+        parent()
+*/
+
+         //IIFE
+
+         (
+            function(){
+                console.log("Hello Guys....")
+            }
+         )();
+
+         (
+            function(){
+                console.log("Sharmila Sharu...")
+            }
+         )()
+
+         //ARROW FUNCTION
+         let a1 =()=>{
+             console.log("Hii...")
+         }
+         a1()
+
+         ///BY PASSING SINGLE VALUE
+
+         let add =(a)=> a
+         console.log(add(10))
+
+         //USING RETURN.....
+
+         let sum =(a,b)=>{
+            return a+b
+         }
+         console.log(sum(20,30))
+
+         //BY PASSING TWO VALUES
+
+         let sub =(a,b)=> a-b
+         console.log(sub(500,200))
+
+         //USING WITH RETURN
+         let div =(a,b)=> {
+            return a/b
+         }
+         console.log(div(49,7))
+
+         //CALLBACK FUNCTION
+         function hii(a){
+            console.log("Hiii am here.....")
+            a()
+         }
+         hii( function hello(){
+            console.log("Hello guys....")
+         })
+
+         //HIGHER ORDER FUNCTION
+         function calculate(c){
+            return c
+         }
+         function bonus(a,b){
+            console.log(a(b))
+         }
+         bonus(calculate,1500)
+
+
+    </script>
+</body>
+</html>

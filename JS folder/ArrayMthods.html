@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [10,20,30,40,50]
+        console.log(arr)
+
+        //INORDER TO GET SINGLE VALUE THE ENTIRE ARRAY WE NEED TO USE INDEX VALUE
+        console.log(arr)
+
+        console.log(arr[0])
+        console.log(arr[2])
+        console.log(arr[4])
+
+        let arr1=["Aarthi",90,5n,"Sharmila"]
+        console.log(arr1)
+
+        //INORDER TO ADD SINGLE VALUE INSIDE THE ARRAY WE NEED TO USE INDEX VALUE..
+        console.log(arr1)
+
+        arr1[4]="Kathir"
+        console.log(arr1)
+
+        arr1[10]="Sasi"
+        console.log(arr1)
+
+        console.log(arr1[3])
+        console.log(arr1[0])
+        console.log(arr1[4])
+        console.log(arr1[8])
+        console.log(arr1[6])
+
+        //STRING METHODS
+        let fruits=["Apple","Banana","Mango","Grapes"]
+        console.log(fruits)
+
+        //PUSH.. IT IS USED TO ADD NEW VALUE AT THE ENDING OF THE ARRAY
+        fruits.push("PineApple")
+        console.log(fruits)
+
+        fruits.push("Orange")
+        console.log(fruits)
+
+        //POP.. IT IS USED TO REMOVE THE VALUE OR THE  ELEMENT AT THE ENDING OF THE ARRAY
+        fruits.pop()
+        console.log(fruits)
+
+        fruits.pop()
+        console.log(fruits)
+
+        //SHIFT.. IT IS USED TO  REMOVE THE VALUE OR THE ELEMENT AT THE BEGINING OF THE ARRAY
+        fruits.shift()
+        console.log(fruits)
+
+        fruits.shift()
+        console.log(fruits)
+
+        //UNSHIFT.. IT IS USED TO ADD NEW VALUE OR ELEMENT AT THE BEGINING OF THE ARRAY
+
+        fruits.unshift("Banana") 
+        console.log(fruits)
+
+        fruits.unshift("Apple")
+        console.log(fruits)
+
+        //SLICE.. IT IS USED TO EXTRACT A VALUE FROM THE ENTIRE ARRAY... WHERE IT WILL NOT AFFECT THE ORIGINAL ARRAY
+        console.log(fruits.slice(0,2))
+        console.log(fruits)
+
+        //SPILCE.. IT IS USED TO EXTRACT A VALUE FROM THE ENTIRE ARRAY.. WHERE IT WILL AFFECT THE ORIGINAL ARRAY
+        //console.log(fruits.splice(0,2))
+        console.log(fruits)
+
+        //INDEXOF.. IT IS USED TO PROVIDE THE INDEX VALUE OF THE PARTICULAR ELEMENT..WHERE WE NEED TO PROVIDE ELEMENT
+        console.log(fruits.indexOf("Apple"))
+        console.log(fruits.indexOf("Mango"))
+
+        //AT.. IT IS USED TO PROVIDE THE SINGLE OR INDIVIDUAL ELEMENT OR VALUE FROM THE ARRAY.. WHERE WE NEED TO PROVIDE INDEX VALUE
+        console.log(fruits.at(3))
+        console.log(fruits.at(2))
+
+        //INCLUDE..IT IS USED TO CHECK WHETHER THE ELEMENT IS PRESENT OR NOT IF IT PRESENT IT WILL RETURN TRUE OR ELSE FALSE
+        console.log(fruits)
+        console.log(fruits.includes("Apple"))
+        console.log(fruits.includes("banana"))
+
+        //REVERSE..IT IS USED TO REVERS THE ENTIRE ARRAY
+        console.log(fruits)
+        console.log(fruits.reverse())
+
+        //JOIN..IT IS USED TO JOI  TWO ARRAY VALUES..IT IS IMPORTANT TO PROVIDE JOINING VALUE
+
+        console.log(fruits.join(" is a fruit "))
+
+    </script>
+</body>
+</html>

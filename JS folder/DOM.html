@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <h1 id="para">Hello World</h1>
+        <p id="para1">Dharani Dharan</p>
+            <h2 id="Demo">Sharmi...</h2>
+
+            <h2 id="haritha">Haritha</h2>
+            <h1 id="para2">Dhinesh</h1>
+        
+    </div>
+
+    <script>
+        let parent = document.getElementById("parent")
+        console.log(parent)
+
+        let m=document.getElementById("Demo")
+        console.log(m)
+        //INSERTING AN ELEMENT....
+        //INORDER TO INSERT AN ELEMENT WE SHOULD USE(INSERT BEFORE)
+
+        let para = document.getElementById("para")
+        console.log(para)
+
+        parent.insertBefore(m,para)
+        console.log(parent)
+
+        //REPLACE THE ELEMENT....
+        //INORDER TO REPLACE THE ELEMENT WE NEED TO USE(replaceChildren)
+
+        let haritha = document.getElementById("haritha")
+        console.log(haritha)
+
+         m=document.getElementById("Demo")
+         m.replaceChildren(haritha)
+
+         console.log(parent)
+
+         let a = document.getElementById("para1")
+         console.log(a)
+
+         let b = document.getElementById("para2")
+         console.log(b)
+
+         a.replaceChildren(b)
+          console.log(parent)
+
+          //STYLING......
+          //STYLING BY TAKING REFERENCE FROM THE BODY...
+
+          document.body.style.color="red"
+          document.body.style.backgroundColor="yellow"
+          document.body.style.textAlign="center"
+          document.body.style.border="7px solid blue"
+
+          //STYLING BY TAKING REFRENCE FROM THE STYLING ELEMENT...
+          para.style.color="white"
+          para.style.backgroundColor="black"
+          para.style.padding="30px"
+          para.style.borderRadius="10px"
+
+
+
+    </script>
+    
+</body>
+</html>

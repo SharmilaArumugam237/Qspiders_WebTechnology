@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //SINGLE QUOTES...
+        let a = 'Hello World'
+        console.log(a)
+
+        //DOUBLE QUOTES
+        let b = "Hello World"
+        console.log(b)
+
+        let c="Morning"
+        console.log("Good "+c)
+
+        //STRING LITERALS
+        console.log(`Good ${c}`)
+
+
+        console.log(`Hello "World"`)
+
+        let name ="Sharmila"
+        let age = 21
+
+        console.log(`I am ${name} and I am ${age} yrs old.`)
+
+        //STRING METHODS
+
+        let str = "Sharmila is a Software Developer"
+
+        //LENGTH...
+        console.log(str.length)
+
+        //CONCATE...
+        console.log(str.concat(" as well as a cook."))
+
+        //REPLACE...IT IS USED TO REPLACE THE ORIGINAL STRING VALUE WITH NEW STRING VALUE
+
+        console.log(str)
+        console.log(str.replace("Software","FullStack"))
+
+        //TOUPPERCASE.. IT IS USED TO CONVERT THE ENTIRE STRING INTO UPPERCASE FORMAT.
+        let str1 = "ShaRMila"
+        console.log(str1.toUpperCase())
+
+        //TOLOWERCASE.. IT IS USED TO CONVERT THE ENTIRE STRING INTO LOWERCASE FORMAT.
+        console.log(str1.toLowerCase())
+
+        //SLICE.. IT IS USED TO EXTRACT A PART FROM THE EXSISTING STRING
+        console.log(str.slice(0,9))
+        console.log(str.slice(14,22))
+
+        //INDEXOF.. IT IS USED TO PROVIED THE INDEX VALUE OF THE PARTICULAR CHARACTER FROM THE ENTIRE STRING
+        console.log(str.indexOf("w"))
+        console.log(str.indexOf("e"))
+
+        //LASTINDEXOF.. IT IS ALSO USED TO PROVIDE THE LAST INDEXVALUE OF THE PARTICULAR CHARACTER WHENEVER WE HAVE 
+        //MULTIPLE CHARACTERS OF SAME TYPE
+        console.log(str.lastIndexOf("e"))
+
+        //TRIMSTART..IT IS USED TO REMOVE THE SPACE AT THE BEGINING OF THE STRING..
+        let str2 = "  FullStack  "
+        console.log(str2)
+        console.log(str2.trimStart())
+
+        //TRIMEND.. IT IS USED TO REMOVE THE SPACE AT THE ENDING OF THE STRING..
+        console.log(str2.trimEnd())
+
+        //REPEAT.. IT IS USED TO REPEATE THE ENTIRE STRING VALUES BUT IT IS IMPORTANT TO PROVIDE INTEGER VALUE
+        console.log(str2.repeat(3))
+
+        //INCLUDE.. IT IS USED TO CHECK WHETHER THE CHARACTER OR THE VALUE IS PRESENT INSIDE THE STRING OR NOT..
+        //IF IT PRESENT IT RETURNS TRUE OR ELSE FALSE..
+        console.log(str.includes("S"))
+        console.log(str.includes("X"))
+
+        //MATCH..IT IS ALSO USED TO CHECK WHETHER THE CHARACTER OR VALUE IS PRESENT OR NOT.. IF IT IS PRESENT IT WILL
+        //GIVE SOME INFORMATION OR ELSE NULL..
+        console.log(str)
+        console.log(str.match("S"))
+        console.log(str.match("X"))
+
+        //CHARAT.. IT IS USED TO PROVIDE A SINGLE CHARACTER FORM THE ENTIRE STRING.. WHERE WE NEED TO PROVIDE INDEX VALUE
+        console.log(str)
+        console.log(str.charAt(5))
+        console.log(str.charAt(21))
+
+        //CHARCODEAT.. IT IS USED TO PROVIDE THE ASCII VALUES FOR THE SINGLE CHARACTER FROM THE ENTIRE STRING..
+        //WHERE WE NEED TO PROVIDE THE INDEX VALUE. A-65 AND a-97
+        console.log(str.charCodeAt(5))
+        console.log(str.charCodeAt(21))
+        console.log(str.charCodeAt(0))
+
+        //PADSTART.. IT IS USED TO ADD THE VALUE AT THE BEGINING OF THE STRING .. WHERE WE NEED TO PROVIDE TWO VALUES
+        //(LENGTH AND FULLFILL STRING)
+        let x = "Raja"
+        console.log(x)
+        console.log(x.padStart(12,"Rani"))
+
+         //PADEND.. IT IS USED TO ADD THE VALUE AT THE ENDING OF THE STRING .. WHERE WE NEED TO PROVIDE TWO VALUES
+        //(LENGTH AND FULLFILL STRING)
+        let y ="Ram"
+        console.log(y)
+        console.log(y.padEnd(7,"Sita"))
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
