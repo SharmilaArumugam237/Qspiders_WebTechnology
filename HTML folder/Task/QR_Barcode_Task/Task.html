@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.12.1/JsBarcode.all.min.js" integrity="sha512-fLmJPYDfCIAZ0gpG/iiIzPw113KquhzI1bxG0XhiLYyqm8Ax2lEiq1h1qv2vafH9tLzkjm4HYRWSeKoGFH4xIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <h1>QR CODE</h1>
+    <img src=" https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.facebook.com/" alt="">
+    &numsp;
+    <img src=" https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.youtube.com/" alt="">
+     &numsp;
+    <img src=" https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.instagram.com/" alt="">
+     &numsp;
+    <img src=" https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.whatsup.com/" alt="">
+     &numsp;
+    <img src=" https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.twitter.com/" alt="">   
+    <h1>BAR CODE</h1>
+    <canvas id="demo1"></canvas>
+    &numsp;
+    <canvas id="demo2"></canvas>
+    &numsp;
+    <canvas id="demo3"></canvas>
+    &numsp;
+    <canvas id="demo4"></canvas>
+    &numsp;
+    <canvas id="demo5"></canvas>
+    <script>
+        JsBarcode("#demo1","Virat Kholi");
+        JsBarcode("#demo2","M S Dhoni");
+        JsBarcode("#demo3","Rohit Sharma");
+        JsBarcode("#demo4","Christ Gayl");
+        JsBarcode("#demo5","Suresh Raina");
+    </script>
+
+</body>
+</html>

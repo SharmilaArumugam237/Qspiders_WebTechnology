@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop down Page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.12.1/JsBarcode.all.min.js" integrity="sha512-fLmJPYDfCIAZ0gpG/iiIzPw113KquhzI1bxG0XhiLYyqm8Ax2lEiq1h1qv2vafH9tLzkjm4HYRWSeKoGFH4xIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <details>
+        <summary>
+            Barcode and QRcode 
+        </summary>
+        <ol>
+            <li>Bar code</li>
+            <canvas id="demo1"></canvas>
+            <canvas id="demo2"></canvas>
+            <script>
+                JsBarcode("#demo1","Sharmila");
+                JsBarcode("#demo2","Shalini");
+            </script>
+            <li>QR code</li>
+            <img src=" https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.facebook.com/" alt=""> &numsp; &numsp;
+            <img src=" https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.instagram.com/" alt="">
+        </ol>
+    </details>
+    <br><br>
+    <details>
+        <summary>
+            I Frame
+        </summary>
+        <ol>
+            <li>Map</li>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497511.2310658522!2d79.87899624107955!3d13.047985943115949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1772024345935!5m2!1sen!2sin" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            &numsp; &numsp;
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7778.373611036806!2d76.93498319607284!3d12.895706589920586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1772716852470!5m2!1sen!2sin" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <li>Youtube</li>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/odATavNn42A?si=7jPkqX6n7yl-89QW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Yfl7zMs4aFU?si=Vu48Ga28oi5BCcw9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </ol>
+        
+    </details>
+    <br><br>
+    <details>
+        <summary>
+            Multi-media 
+        </summary>
+        <ol>
+        </li>
+        <img src="../Dropdown_Task/mango.jpg" alt="">
+        <ul>
+        <li>Rich in Vitamin A</li>
+        <li>High in Vitamin C</li>
+        <li>Contains fiber</li>
+        <li>Natural sugars for energy</li>
+        <li>Good for skin and hari</li>
+        </ul>
+            
+            <li>Video</li>
+            <br>
+            <video src="../Project_1/293519_medium.mp4" height="300px" width="400px"></video><br>
+            <ul>
+                <li>Fruits are essential for a healthy diet, providing crucial vitamins (C, K), potassium, and fiber that boost immunity, improve digestion, and support heart health.</li>
+                <li>Rich in antioxidants and polyphenols, they help combat chronic diseases, reduce inflammation, and promote healthy skin.</li>
+                <li>Consuming whole fruits helps regulate blood sugar, aids in weight management, and provides natural hydration. </li>
+                  
+            </ul>
+            <li>Audio</li>
+            <audio src="../Audio/intensity-by-audio-club-intensity-by-audio-club-343637.mp3" controls></audio><br>
+           <ul>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, labore.</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, eos!</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, nesciunt?</li>
+           </ul>
+        </ol>
+    </details>
+    <br><br>
+    <a href="List.html" style="color: blue;"><button >Next</button></a> &numsp;
+    <a href="Final.html" style="color: red;"><button>Final</button></a>
+    
+</body>
+</html>
